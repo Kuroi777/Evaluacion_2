@@ -1,15 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
-    <link rel="StyleSheet" href="estilos2.css" type="text/css">    
+<html>
+    <link rel="StyleSheet" href="estilos.css" type="text/css">    
 <head>
-    <link rel="shortcut icon" href="/home/kuroi/Escritorio/Inacap/Programacion/Evluacion_2/asd/avatar.jpg" type="jpg">
+    <meta name="viewport" content="width=device-width,initial">
+    <link rel="shortcut icon" href="/home/kuroi/Escritorio/Inacap/Programacion/Evluacion_2/html/avatar.jpg" type="jpg">
     <title>OnlyFans</title>
+
+    <div class="titulo">
+        <img src="/home/kuroi/Escritorio/Inacap/Programacion/Evluacion_2/Imagenes/Titulo.gif" alt="Imagen de título">
+      </div>   
 </head>
 <body>
-    <div>
-        <div>
-            <p>Holi</p>
-        </div>
+    <div class="header">
+        <h1>Homero J Simpson</h1>
     </div>
+   <div>
+        <img src="/home/kuroi/Escritorio/Inacap/Programacion/Evluacion_2/Imagenes/1.png" alt="foto.perfil" class="imgRedonda">
+    </div>
+
+    <div class="row">
+        <div class="col-3 menu">
+          <ul>
+            <li> Link 1 </li>
+            <li> Link 2 </li>
+            <li> Link 3 </li>
+          </ul>
+        </div>
+
+        <div class="col-9">
+            <h1>ASDASDASDASDASDASD</h1>
+            <p>ASDASDASDASD</p>
+            <p>QWEQWEQWEQWEQWEQWEQWE</p>
+        </div>
+
+
+    </div>
+
+
 </body>
 </html>
