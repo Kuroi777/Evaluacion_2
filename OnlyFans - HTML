@@ -1,15 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
-    <link rel="StyleSheet" href="estilos2.css" type="text/css">    
+<html>
+<link rel="StyleSheet" href="estilos.css" type="text/css">  
 <head>
-    <link rel="shortcut icon" href="/home/kuroi/Escritorio/Inacap/Programacion/Evluacion_2/asd/avatar.jpg" type="jpg">
+    <link rel="shortcut icon" href="/home/kuroi/Escritorio/Inacap/Programacion/Evluacion_2/Imagenes/avatar.jpg" type="jpg">
     <title>OnlyFans</title>
+    </div>
 </head>
 <body>
-    <div>
-        <div>
-            <p>Holi</p>
-        </div>
-    </div>
-</body>
-</html>
+	<div class="loader"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(window).load(function() {
+            $(".loader").fadeOut("slow");
+        });
+        </script>
+	<div class="container">
+	  <div class="column">
+		<h1>Contenedor 1</h1>
+		<p>Contenido del contenedor 1</p>
+	  </div>
+	  <div class="column2">
+		<div>
+			<div class="portada">
+				<spam class="txt"> Homero </spam><img class="verificado" src="/home/kuroi/Escritorio/Inacap/Programacion/Evluacion_2/Imagenes/verificado.jpg" alt="verificado">
+				
+			</div>
+		
+			<figure>
+				<img src="/home/kuroi/Escritorio/Inacap/Programacion/Evluacion_2/Imagenes/3.jpeg" alt="Perfil" class="Perfil">
+				<figcaption> Homero J. Simpsom </figcaption>
+				<figcaption> ¡Solo ves lo que quieras ver! 🔥 Erotical & sensual content...</figcaption>
+				<br>
+				<div class="redes_sociales">
+					<a href="https://www.facebook.com/iHomeroMC" target="_blank">
+						<img class="facebook" src="/home/kuroi/Escritorio/Inacap/Programacion/Evluacion_2/Imagenes/face.jpg" alt="Facebook">
+				  	</a>
+
+					<a href="https://www.instagram.com/thesimpsons/?hl=es" target="_blank">
+						<img class="instagram" src="/home/kuroi/Escritorio/Inacap/Programacion/Evluacion_2/Imagenes/insta.jpg" alt="Instagram">
+					</a>
+					<a href="https://www.youtube.com/channel/UCMRcI_RLEvXDMCbHumWkLMg" target="_blank">
+						<img class="youtube" src="/home/kuroi/Escritorio/Inacap/Programacion/Evluacion_2/Imagenes/youtube.png" alt="Youtube">
+					</a>
+				</div>
+				
+			</figure>
+		</div>
+	  </div>
+	  <div class="column">
+		<h1>Contenedor 3</h1>
+		<p>Contenido del contenedor 3</p>
+	  </div>
+	</div>
+  </body>
