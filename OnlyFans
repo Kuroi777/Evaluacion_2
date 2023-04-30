@@ -1,15 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
-    <link rel="StyleSheet" href="estilos2.css" type="text/css">    
+<html>
+<link rel="StyleSheet" href="est.css" type="text/css">  
 <head>
-    <link rel="shortcut icon" href="/home/kuroi/Escritorio/Inacap/Programacion/Evluacion_2/asd/avatar.jpg" type="jpg">
+    <link rel="shortcut icon" href="/home/kuroi/Escritorio/Inacap/Programacion/Evluacion_2/html/avatar.jpg" type="jpg">
     <title>OnlyFans</title>
+    </div>
 </head>
 <body>
-    <div>
-        <div>
-            <p>Holi</p>
+    
+    <div class="loader"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(window).load(function() {
+            $(".loader").fadeOut("slow");
+        });
+        </script>
+
+        <div class="grid-container">
+                <div class="grid-item1"></div>
+                <div class="grid-item2"><p class="cabecera">Homero &#10004;</p></div>
+                <div class="grid-item3"></div>
+                <div class="grid-item4">4</div>
+                <div class="grid-item5">5</div>
+                <div class="grid-item6">6</div>
+                <div class="grid-item7">7</div>
+                <div class="grid-item8">8</div>
+                <div class="grid-item9">9</div>
+                <div class="grid-item10">10</div>
+                <div class="grid-item11">11</div>
+                <div class="grid-item12">12</div>
         </div>
-    </div>
-</body>
-</html>
+    
+    </body>
+
