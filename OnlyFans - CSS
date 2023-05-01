@@ -1,59 +1,8 @@
 *{
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing:content-box
 }
-.grid-container{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    background-color: #2196f3;
-    padding: 10px;
-}
-[class*="grid-item"]{
-    background-color: white;
-    border: 1px  solid rgb(124, 121, 121);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-
-}
-.grid-item1{
-    background-color: white;
-    border: 1px  solid rgb(124, 121, 121);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-    width: 33,3%;
-    height: 214px;;
-
-}
-
-.grid-item2{
-    background-image:url("/home/kuroi/Escritorio/Inacap/Programacion/Evluacion_2/Imagenes/1.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 1px  solid rgb(124, 121, 121);
-    padding: 20px;
-    font-size: 30px;
-    text-align:center;
-    width: 33,3%;
-    height: 214px;
-
-}
-.grid-item3{
-    background-color: white;
-    border: 1px  solid rgb(124, 121, 121);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-    width: 33,3%;
-    height:214px;
-
-}
-.cabecera{
-position:fixed;
-padding-top: -100px;
-color: white;
-}
-
 .loader {
     position: fixed;
     left: 0px;
@@ -61,6 +10,186 @@ color: white;
     width: 100%;
     height: 100%;
     z-index: 9999;
-    background: url('/home/kuroi/Escritorio/Inacap/Programacion/Evluacion_2/Imagenes/4.jpg') 50% 50% no-repeat rgb(249,249,249);
+    background: url('/home/kuroi/Escritorio/Inacap/Programacion/Evluacion_2/Imagenes/logo_carga.jpg') 50% 50% no-repeat #fff;
     opacity: .8;
 }
+.container {
+	display: flex;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	border: 0;
+	height: 100%;
+}
+.column {
+	flex-basis: 25%;
+	background-color: #fff;
+	padding: 20px;
+	overflow-y: auto;
+	border: 1px solid #f7f4f4;
+	
+}
+.column2 {
+	flex-basis: 50%;
+	overflow-y: auto;
+	border: 1px solid #f7f4f4;
+	background: #fff;
+	color: rgb(34, 34, 34);
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: stretch;
+}
+.card {
+	width: 100%;
+	height: 425px;
+	background: #fff;
+	border-radius: 10px;
+	position: relative;
+	display: flex;
+	cursor: pointer;
+	justify-content: center;
+	box-shadow: 0 0 20px rgb(0, 0, 0 ,0.13);
+
+}
+.card::before{
+	content:"";
+	background-image: url(/home/kuroi/Escritorio/Inacap/Programacion/Evluacion_2/Imagenes/1.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 2%;
+	width: 95%;
+	height: 150px;
+	z-index: 1;
+	border-radius: 10px 10px 0 0;
+	box-shadow: 0 0 20px rgb(0, 0, 0,0.13);
+	transform-origin: bottom;
+	transition: trasform 0.4s;
+
+}
+.card:hover::before{
+	transform: translateY(-5px)scaleY(1.2);
+
+}
+.card .img{
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	z-index: 2;
+	transform: translateY(50px);
+	border: 5px solid #fff;
+	overflow: hidden;
+	position: absolute;
+	background: #fff;
+	background-image: url(/home/kuroi/Escritorio/Inacap/Programacion/Evluacion_2/Imagenes/3.jpeg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.card .img .img{
+	width: 25px;
+	height: 25px;
+	top: 0;
+	left: 0;	
+}
+.content{
+	width: 100%;
+	height: 100%;
+	transform: translateY(170px);
+	display: flex;
+	flex-direction: column;
+	z-index: 3;
+	align-items: center;
+}
+.content p{
+	margin: 0 0;
+}
+.center{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 20px;
+}
+.box{
+	padding: 10px 30px;
+	border-radius: 10px;
+	text-align: center;
+}
+.box:hover{
+	background-color: rgb(128, 128, 128);
+}
+
+.buttons{
+	min-width: 50px;
+	display: flex;
+	justify-content: space-around;
+}  
+ .buttons a {
+	text-decoration: none;
+	font-size: 28px;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	background-color: #00aff0;
+	color: #fff;
+	border-radius: 50%;
+	box-shadow: 2px 2px 5px rgb(0, 0, 0);
+	transition: all .4s ease-in-out;
+ }
+ .buttons a:hover {
+	transform: scale(1.4);
+ }
+
+.suscripcion {
+	width: 100%;
+	height: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-radius: 10px;
+	background: #fff;
+	box-shadow: 0 0 20px rgb(0, 0, 0,0.13);
+}
+.suscripcion h4{
+	color: rgb(128, 128, 128);
+	padding: 5px;
+}
+.suscripcion p{
+	color: black;
+	padding: 5px;
+}
+.btn{
+	width: 95%;
+	padding: 10px 20px;
+	border-radius: 20px;
+	outline: none;
+	border: none;
+	background:#00aff0;
+	color: #fff;
+	font-weight: 600;
+	box-shadow: 0 0 20px rgb(0, 0, 0,0.13);
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.btn:hover{
+	background-color: rgb(128, 128, 128);
+}
+.izquierda{
+	text-align: left;
+}
+.derecha{
+	text-align: right;
+}
+
+
+
+
+
